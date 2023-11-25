@@ -21,10 +21,10 @@ go run mrsequential.go wc.so pg-\*.txt
 
 ### Run distributed word count
 
-Start server(coordinator):
+Start server(coordinator):\
 go run mrcoordinator.go pg-\*.txt
 
-Call workers to do the map and then reduce:
+Call workers to do the map and then reduce:\
 go run mrworker.go wc.so
 
 ### Check work count results
